@@ -1,16 +1,16 @@
 import React from 'react'
-import close from './images/close.svg'
-import mmask from './images/m_mask.svg'
-import wallet from './images/w_connect.svg'
-import chevron from './images/chevron.svg'
+import close from './pages/images/close.svg'
+import mmask from './pages/images/m_mask.svg'
+import wallet from './pages/images/w_connect.svg'
+import chevron from './pages/images/chevron.svg'
+import './modal.css'
 
 const Modal = ({ open, onClose }) => {
     if (!open) return null
 
   return (
-    <div>
+    <div className='modal'>
         <div>
-            <div>
                 <h3> Connect Wallet </h3>
                 <button onClick={onClose}><img src={close} alt="close"/></button>
             </div> <hr />
@@ -29,7 +29,6 @@ const Modal = ({ open, onClose }) => {
             </a>
             <img src={chevron} alt="open"/>
             </div>
-        </div>
     </div>
   )
 }

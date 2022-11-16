@@ -39,26 +39,14 @@ const Home = () => {
     <section className='first_section'>
       <h1>Inspiration for your next adventure</h1>
       <div className='inspiration'>
-        <div className='insp'>
-        <div>
           <img src={dkg1} alt="Inspiration" />
           <img src={dkg2} alt="Inspiration" />
-        </div>
-        <div>
           <img src={dkg3} alt="Inspiration" />
           <img src={dkg4} alt="Inspiration" />
-        </div>
-        </div>
-        <div className='insp'>
-        <div>
           <img src={dkg11} alt="Inspiration" />
           <img src={dkg12} alt="Inspiration" />
-        </div>
-        <div>
           <img src={dkg13} alt="Inspiration" />
           <img src={dkg14} alt="Inspiration" />
-        </div>
-        </div>
       </div>
     </section>
 

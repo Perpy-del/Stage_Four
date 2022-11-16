@@ -89,17 +89,8 @@
 }
 
 .inspiration {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.insp div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .second_section {
@@ -299,9 +290,9 @@
         margin-bottom: 3.5rem;
     }
 
-    .insp div {
-        flex-direction: row;
-        padding-bottom: 1.5rem;
+    .inspiration {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
     }
 
     .second_section {

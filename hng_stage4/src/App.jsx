@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 import React from 'react'
+import { useState } from 'react'
+import Modal from './Modal'
 import Navbar from './Navbar/Navbar'
 import Home from './pages/Home/Home'
 import Places from './pages/Places/Places'
@@ -9,9 +11,12 @@ import Footer from './Footer/Footer'
 
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar setIsOpen={setIsOpen}/>
+      {isOpen && <div className='overlay'></div>} 
+      <Modal open={isOpen} onClose={() => setIsOpen(false)}/>
       <Routes>
         <Route index element={<Home/>}/>
         <Route path='places' element={<Places/>}/>

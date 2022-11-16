@@ -1,5 +1,4 @@
 import React from 'react'
-import Modal from '../Modal'
 import { useState } from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import Logo from '../images/logo.svg'
@@ -7,9 +6,9 @@ import menu from '../images/hambg.svg'
 import close from '../images/Vector.svg'
 import './navbar.css'
 
-const Navbar = () => {
+const Navbar = ({setIsOpen}) => {
     const [isShowing, setIsShowing] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
+    
   return (
     <nav>
       <div className="container nav__container">
@@ -21,9 +20,7 @@ const Navbar = () => {
           <Link to='/' className='connect' onClick={() => setIsOpen(true)}>
               Connect wallet
           </Link>
-          <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-              
-          </Modal>
+
           <ul className='mobile'>
               <li>
                 <NavLink to='/' className='nav_items'>
@@ -46,7 +43,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
           </ul>
-          <Link to='/' className='wallet'>
+          <Link to='/' className='wallet' onClick={() => setIsOpen(true)}>
                  Connect wallet
           </Link>
 
