@@ -38,7 +38,7 @@ const Places = () => {
         </button>
       </header>
 
-      <main className='inspiration'>
+      {/* <main className='inspiration'> */}
       <div className='insp'>
           <img src={pts01} alt="Inspiration" />
           <img src={pts02} alt="Inspiration" />
@@ -57,7 +57,7 @@ const Places = () => {
           <img src={pts33} alt="Inspiration" />
           <img src={pts34} alt="Inspiration" />
       </div>
-      </main>
+      {/* </main> */}
     </div>
   )
 }

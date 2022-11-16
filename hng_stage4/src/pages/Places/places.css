@@ -1,8 +1,9 @@
 header {
-    margin: 2.5rem 1rem 0;
+    margin: 4rem 1.4rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    /* justify-content: center; */
 }
 
 .header_content {
@@ -29,19 +30,16 @@ header {
     border: 0.1rem solid var(--color-txt-blk);
 }
 
-.inspiration{
-    padding: 3.5rem 0;
-}
-
 .insp {
     display: grid;
     grid-template-columns: auto;
     grid-gap: 1.5rem;
+    place-content: center;
 }
 
 @media screen and (min-width: 700px) {
     header {
-        margin: 2.5rem 2.5rem 0;
+        margin: 4.5rem 2.5rem 3rem;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -88,10 +86,11 @@ header {
 @media screen and (min-width: 900px) {
 
     header {
-        margin-top: 4.5rem;
+        margin: 6rem 0 3rem 3.5rem;
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
+        justify-content: center;
     }
     
     .header_content {
@@ -116,14 +115,13 @@ header {
         border: 0.1rem solid var(--color-txt-blk);
     }
 
-    .inspiration{
-        padding: 3.5rem 0;
-    }
-
     .insp {
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 1.5rem;
+        place-content: center;
     }
+
+    
     
 }
