@@ -75,7 +75,7 @@ const Navbar = ({setIsOpen}) => {
                   Community
                 </NavLink>
               </li>
-              <Link to='/' className='nav__connect'>
+              <Link to='/' className='nav__connect' onClick={() => setIsOpen(true)}>
                  Connect wallet
               </Link>
           </ul>

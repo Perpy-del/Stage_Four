@@ -14,8 +14,8 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <BrowserRouter>
-      <Navbar setIsOpen={setIsOpen}/>
       {isOpen && <div className='overlay'></div>} 
+      <Navbar setIsOpen={setIsOpen}/>
       <Modal open={isOpen} onClose={() => setIsOpen(false)}/>
       <Routes>
         <Route index element={<Home/>}/>

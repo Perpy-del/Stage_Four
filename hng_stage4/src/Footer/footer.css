@@ -68,7 +68,7 @@
  
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
 
     .footer_container {
         display: flex;

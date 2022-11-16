@@ -90,7 +90,9 @@
 
 .inspiration {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
+    place-content: center;
+    grid-gap: 1.5rem;
 }
 
 .second_section {
@@ -182,19 +184,8 @@
     }
 
     .inspiration {
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        justify-content: center;
-    }
-
-    .inspiration img {
-        width: 100%;
-    }    
-
-    .insp div {
-        flex-direction: column;
-        gap: 1.5rem;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .first_section h1 {
