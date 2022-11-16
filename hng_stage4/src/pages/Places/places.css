@@ -1,0 +1,129 @@
+header {
+    margin: 2.5rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.header_content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.header_content h3 {
+    padding-bottom: 1rem;
+}
+
+#locate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Red Rose', cursive;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0;
+    background-color: var(--color-bg);
+    border: 0.1rem solid var(--color-txt-blk);
+}
+
+.inspiration{
+    padding: 3.5rem 0;
+}
+
+.insp {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        margin: 2.5rem 2.5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .header_content {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        place-items: center;
+    }
+    
+    .header_content h3 {
+        padding-bottom: 1rem;
+    }
+    
+    #locate {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+        font-family: 'Red Rose', cursive;
+        font-weight: 600;
+        border-radius: 0.5rem;
+        padding: 0.4rem 0;
+        background-color: var(--color-bg);
+        border: 0.1rem solid var(--color-txt-blk);
+    }
+    .inspiration{
+        padding: 3.5rem 1.5rem;
+    }
+
+    .insp {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    header {
+        margin-top: 4.5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    
+    .header_content {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+    
+    .header_content h3 {
+        padding-bottom: 1rem;
+    }
+    
+    #locate {
+        width: 20%;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+        font-family: 'Red Rose', cursive;
+        font-weight: 600;
+        border-radius: 0.5rem;
+        padding: 0.4rem 0;
+        background-color: var(--color-bg);
+        border: 0.1rem solid var(--color-txt-blk);
+    }
+
+    .inspiration{
+        padding: 3.5rem 0;
+    }
+
+    .insp {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 1.5rem;
+    }
+    
+}

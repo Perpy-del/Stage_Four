@@ -1,0 +1,144 @@
+nav {
+    width: 100vw;
+    margin-top: 1.5rem;
+}
+
+.logo {
+    height: 1rem;
+}
+
+.nav__container {
+    position: relative;
+    padding-top: 0.75rem;
+}
+
+.nav__links {
+    position: absolute;
+    padding: 1rem 1rem 2rem;
+    right: 0;
+    width: 11rem;
+    margin-top: 0.5rem;
+    background-color: var(--color-primary);
+        color: var(--color-txt-white);
+}
+
+.nav__links li {
+    height: 5.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__connect {
+    color: var(--color-primary);
+    font-size: 12px;
+    background-color: var(--color-bg);
+    font-weight: 600;
+    padding: 0.5rem 0.85rem;
+    margin: 2rem 0.85rem 0;
+    border-radius: 0.5rem;
+}
+
+.nav__toggle {
+    padding-left: 2rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background: transparent;
+}
+
+.nav_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.connect {
+    background-color: var(--color-primary);
+    color: var(--color-txt-white);
+    padding: 0.7rem 1.5rem;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.mobile, .wallet, .hide__nav {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+
+    .nav__container {
+        padding-top: 1.5rem;
+    }
+
+    .logo {
+        height: 2rem;
+    }
+
+    .nav__links {
+        width: 15rem;
+    }
+
+    .nav__links li {
+        font-size: 23px;
+        height: 7rem;
+    }
+
+    .connect {
+        font-size: 20px;
+        padding: 1rem 3rem;
+    }
+
+    .nav__connect {
+        color: var(--color-primary);
+        font-size: 18px;
+        background-color: var(--color-bg);
+        font-weight: 600;
+        padding: 0.85rem 1.5rem;
+        margin: 2rem 0.85rem 0;
+        border-radius: 0.5rem;
+    }
+
+    .nav__toggle {
+        margin-right: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+    .nav__toggle, .connect {
+        display: none;
+    }
+
+    .show__nav {
+        display: flex;
+    }
+
+    nav {
+        width: 100vw;
+        margin-top: 1.5rem;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        justify-content: space-between;
+    }
+
+    .wallet {
+        display: flex;
+        background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+        border-radius: 10px;
+        color: var(--color-txt-white);
+        padding: 1rem 1.5rem;
+    }
+
+    .nav_items {
+        color: var(--color-txt-black);
+        font-size: 20px;
+    }
+
+    .nav__links {
+        display: none;
+    }
+}
